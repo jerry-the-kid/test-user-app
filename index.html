@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hello, world!</title>
+  </head>
+  <body class="d-lg-flex">
+    <div class="navbar-custom bg-light p-3">
+      <a
+        href="#"
+        class="text-decoration-none d-flex align-items-center link-dark"
+      >
+        <ion-icon name="leaf-outline" class="fs-4 me-3"></ion-icon>
+        <h3>Leaf Fall</h3></a
+      >
+      <ul class="nav nav-pills d-flex flex-column mt-4">
+        <li class="nav-item">
+          <a class="nav-link link-dark">
+            <div class="d-flex align-items-center">
+              <ion-icon name="home-outline"></ion-icon>
+              <span class="ms-2"> Home</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active link-dark" href="#">
+            <div class="d-flex align-items-center">
+              <ion-icon name="people-outline"></ion-icon>
+              <span class="ms-2"> Users</span>
+            </div></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark" href="#">
+            <div class="d-flex align-items-center">
+              <ion-icon name="people-outline"></ion-icon>
+              <span class="ms-2"> Departments</span>
+            </div></a
+          >
+        </li>
+      </ul>
+      <hr />
+
+      <!-- Profile -->
+      <div class="btn-group dropup mt-auto">
+        <div
+          class="avatar-box dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img src="image/duck.jpg" alt="avatar" class="avatar" />
+          <p class="fw-bold ms-4 fs-6 mb-0 lh-1 me-3">Duck</p>
+        </div>
+        <ul class="dropdown-menu mb-3 ms-3">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Account Settings</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-light bg-light d-lg-none">
+      <div class="container-fluid">
+        <a
+          href="#"
+          class="
+            text-decoration-none
+            d-flex
+            align-items-cente
+            nav-link
+            link-dark
+          "
+        >
+          <ion-icon name="leaf-outline" class="fs-4 me-3"></ion-icon>
+          <h3>Leaf Fall</h3></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start bg-light"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Leaf fall</h3>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-auto">
+              <li class="nav-item">
+                <a class="nav-link">
+                  <div class="d-flex align-items-center">
+                    <ion-icon name="home"></ion-icon>
+                    <span class="ms-2"> Home</span>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <div class="d-flex align-items-center">
+                    <ion-icon name="people"></ion-icon>
+                    <span class="ms-2"> Users</span>
+                  </div></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="d-flex align-items-center">
+                    <ion-icon name="business"></ion-icon>
+                    <span class="ms-2"> Departments</span>
+                  </div></a
+                >
+              </li>
+              <hr />
+            </ul>
+          </div>
+          <!-- Profile -->
+          <div class="btn-group dropup mt-auto p-3">
+            <div
+              class="avatar-box dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="image/duck.jpg" alt="avatar" class="avatar" />
+              <p class="fw-bold ms-4 fs-6 mb-0 lh-1 me-3">Duck</p>
+            </div>
+            <ul class="dropdown-menu mb-2 ms-3">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Account Settings</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar -->
+    <div class="container-fluid p-4">
+      <div class="row mb-4">
+        <div class="col-12">
+          <h3>User List</h3>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Users</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="row p-4 bg-light rounded">
+        <div class="mb-4 col-12 col-sm-8 col-md-5">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-primary" type="submit">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </form>
+        </div>
+
+        <div
+          class="
+            col-12 col-sm-4 col-md-7
+            mb-4
+            d-flex
+            justify-content-end
+            flex-column-fluid
+          "
+        >
+          <button class="btn btn-primary d-flex align-items-center">
+            <ion-icon name="person-add-outline" class="me-2"></ion-icon>
+            Add User
+          </button>
+        </div>
+        <div class="table-responsive col-12">
+          <table
+            class="table table-borderless bg-white"
+            style="width: 100%; min-width: 700px"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Người Dùng</th>
+                <th scope="col">Phòng ban</th>
+                <th scope="col">Chức vụ</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-top">
+                <td class="user-grid">
+                  <img src="image/duck.jpg" alt="avatar" class="user-img" />
+                  <span>Duck</span>
+                  <span class="fw-light">Duck@gmail.com</span>
+                </td>
+                <td class="align-middle">Phân phối thép</td>
+                <td class="align-middle">Dancer</td>
+                <td class="align-middle text-center">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-info me-1"
+                  >
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary me-1"
+                  >
+                    <ion-icon name="create-outline"></ion-icon>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-top">
+                <td class="user-grid">
+                  <img src="image/a.jpg" alt="avatar" class="user-img" />
+                  <span>Jacob</span>
+                  <span class="fw-light">jacob@gmail.com</span>
+                </td>
+                <td class="align-middle">Dân sự</td>
+                <td class="align-middle">Lo cho dân cho nước</td>
+                <td class="align-middle text-center">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-info me-1"
+                  >
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary me-1"
+                  >
+                    <ion-icon name="create-outline"></ion-icon>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-top">
+                <td class="user-grid">
+                  <img src="image/b.jpg" alt="avatar" class="user-img" />
+                  <span>Minato</span>
+                  <span class="fw-light">minato@gmail.com</span>
+                </td>
+                <td class="align-middle">Thiết kế</td>
+                <td class="align-middle">Tester</td>
+                <td class="align-middle text-center">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-info me-1"
+                  >
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary me-1"
+                  >
+                    <ion-icon name="create-outline"></ion-icon>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="border-top">
+                <td class="user-grid">
+                  <img src="image/e.jpg" alt="avatar" class="user-img" />
+                  <span>Yukiho</span>
+                  <span class="fw-light">yukiho@gmail.com</span>
+                </td>
+                <td class="align-middle">Marketing</td>
+                <td class="align-middle">Nhân viên thực tập</td>
+                <td class="align-middle text-center">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-info me-1"
+                  >
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary me-1"
+                  >
+                    <ion-icon name="create-outline"></ion-icon>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="border-top">
+                <td class="user-grid">
+                  <img src="image/c.jpg" alt="avatar" class="user-img" />
+                  <span>Dũng</span>
+                  <span class="fw-light">dungcoder@gmail.com</span>
+                </td>
+                <td class="align-middle">IT</td>
+                <td class="align-middle">Coder ko lương</td>
+                <td class="align-middle text-center">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-info me-1"
+                  >
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary me-1"
+                  >
+                    <ion-icon name="create-outline"></ion-icon>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="border-top">
+                <td class="user-grid">
+                  <img src="image/d.jpg" alt="avatar" class="user-img" />
+                  <span>Tuấn</span>
+                  <span class="fw-light">tuantrapboi123@gmail.com</span>
+                </td>
+                <td class="align-middle">Nghệ thuật</td>
+                <td class="align-middle">Giáo viên nhạc</td>
+                <td class="align-middle text-center">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-info me-1"
+                  >
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary me-1"
+                  >
+                    <ion-icon name="create-outline"></ion-icon>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
